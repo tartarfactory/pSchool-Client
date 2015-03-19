@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  margin: 0;
+  height: 100%;
+  font-family: NanumGothic, '나눔고딕', '나눔 고딕', NanumGothicWeb;
+  color: #333;
+}
+#content {
+  width: auto;
+  min-height: 100%;
+  margin: -50px 0 0 0;
+  background-color: #f3f3f3;
+}
+#content #languageWrap {
+  padding: 70px 14px 0 14px;
+}
+#content #languageWrap .titlePanel {
+  margin-bottom: 5px;
+}
+#content #languageWrap #languageMenuPanel {
+  width: 100%;
+  margin-top: 5px;
+  background-color: white;
+  border: 1px solid #e5e5e5;
+  border-top: 3px solid #e0e0e0;
+  border-radius: 4px;
+  padding: 15px;
+  text-align: center;
+}
+#content #languageWrap #languageMenuPanel #languageC {
+  font-size: 16px;
+  font-weight: bold;
+  color: #f3f3f3;
+  background-color: #faae1a;
+}
+#content #languageWrap #languageMenuPanel #languageJava {
+  font-size: 14px;
+  font-weight: bold;
+  color: #f3f3f3;
+  background-color: #f26522;
+}
+#content #languageWrap #languageMenuPanel #languageJS {
+  font-size: 12px;
+  font-weight: bold;
+  color: #f3f3f3;
+  background-color: #6baf44;
+}
+#content #languageWrap #languageMenuPanel #languageJS > p {
+  word-break: break-all;
+  line-height: 12px;
+  padding-top: 12px;
+}
+#content #languageWrap #languageMenuPanel #languagePlus {
+  font-size: 16px;
+  font-weight: bold;
+  color: #46a8a8;
+  background-color: #86cfcf;
+}
+#content #languageWrap #languageMenuPanel .roundButton {
+  display: inline-block;
+  vertical-align: middle;
+  min-width: 50px;
+  min-height: 50px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  box-shadow: 0px 1px 5px 1px #e2e2e2;
+}
+#content #languageWrap #languageMenuPanel .last {
+  margin-right: 0px;
+}
+#content #algorithmWrap {
+  padding: 20px 14px 0 14px;
+}
+#content #algorithmWrap .titlePanel {
+  margin-bottom: 5px;
+}
+#content #algorithmWrap #algorithmMenuPanel {
+  margin-top: 5px;
+  background-color: white;
+  border: 1px solid #e5e5e5;
+  border-top: 3px solid #e0e0e0;
+  border-radius: 4px;
+  text-align: center;
+}
+#content #algorithmWrap #algorithmMenuPanel > ul {
+  color: #444;
+  list-style: none;
+  font-size: 0.8em;
+}
+#content #algorithmWrap #algorithmMenuPanel > ul > li {
+  padding: 12px 0 12px 12px;
+  text-align: left;
+  border-bottom: 1px solid #e5e5e5;
+}
+#content #algorithmWrap #algorithmMenuPanel > ul > li > core-icon {
+  float: right;
+  margin-right: 10px;
+  margin-top: -4px;
+}
+#content #algorithmWrap #algorithmMenuPanel > ul > li.last {
+  border: 0px;
+}
+#content #algorithmWrap #algorithmMenuPanel .last {
+  margin-right: 0px;
+}
+#content #backgroundImageWrap {
+  padding: 20px 14px 0 14px;
+}
+#content #backgroundImageWrap #imagePanel {
+  margin-top: 5px;
+  text-align: center;
+  color: #e5e5e5;
+}
+#content #backgroundImageWrap #imagePanel .keyboardImage {
+  display: inline-block;
+}
+#content #backgroundImageWrap #imagePanel .keyboardImage > core-icon {
+  width: 100px;
+  height: 100px;
+}
+#content #backgroundImageWrap #imagePanel .mouseImage {
+  display: inline-block;
+}
+#content #backgroundImageWrap #imagePanel .mouseImage > core-icon {
+  width: 40px;
+  height: 40px;
+}
+footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  background: #e9e9e9;
+  border-top: 1px solid #ccc;
+}
+footer #footerWrap {
+  padding: 20px;
+  text-align: center;
+}
+footer #footerWrap > div {
+  display: inline-block;
+}
+footer #footerWrap .kakaotalkShareButton > img {
+  vertical-align: -20%;
+  width: 64px;
+  height: 20px;
+}

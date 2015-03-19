@@ -1,0 +1,28 @@
+header {
+  position: relative;
+  z-index: 1;
+  width: auto;
+  height: 50px;
+  color: white;
+  background-color: #536dfe;
+  box-shadow: 0px 0px 5px 2px #d0d0d0;
+}
+header #headerWrap {
+  height: 100%;
+}
+header #headerWrap ::content #logo {
+  font-size: 1em;
+  font-weight: bold;
+  padding-left: 14px;
+}
+header #headerWrap ::content #headerTitle {
+  font-size: 0.95em;
+  padding-left: 10px;
+}
+header #headerWrap ::content #profileButton {
+  padding-right: 14px;
+}
+header #headerWrap ::content #profileButton > core-icon[icon="social:person-outline"] {
+  width: 20px;
+  height: 20px;
+}
