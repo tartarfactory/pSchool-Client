@@ -1,114 +1,127 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
-    <!-- Load platform support before any code that touches the DOM. -->
-    <script src="bower_components/webcomponentsjs/webcomponents.min.js"></script>
-    <!-- Polymer Elements -->
-    <link rel="import" href="bower_components/app-router/app-router.html" />
-    <link rel="import" href="bower_components/core-header-panel/core-header-panel.html" />
-    <link rel="import" href="bower_components/core-toolbar/core-toolbar.html" />
-    <link rel="import" href="bower_components/core-icons/core-icons.html" />
-    <link rel="import" href="bower_components/core-icons/social-icons.html" />
-    <link rel="import" href="bower_components/core-icons/device-icons.html" />
-    <link rel="import" href="bower_components/core-icons/hardware-icons.html" />
-    <link rel="import" href="bower_components/core-icon/core-icon.html" />
-    <link rel="import" href="pschool_components/pschool-header.html" />
-    <link rel="stylesheet" href="common.css"/>
-    <script>
-        __PSCHOOL_HOST__ = {
-            host: "http://pschool/"
-        }
-    </script>
+   <meta charset="utf-8"/>
+   <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+   <!-- Load platform support before any code that touches the DOM. -->
+   <script src="bower_components/webcomponentsjs/webcomponents.min.js"></script>
+   <!-- Polymer Elements -->
+   <link rel="import" href="bower_components/app-router/app-router.html"/>
+   <link rel="import" href="bower_components/core-header-panel/core-header-panel.html"/>
+   <link rel="import" href="bower_components/core-toolbar/core-toolbar.html"/>
+   <link rel="import" href="bower_components/core-icons/core-icons.html"/>
+   <link rel="import" href="bower_components/core-icons/social-icons.html"/>
+   <link rel="import" href="bower_components/core-icons/device-icons.html"/>
+   <link rel="import" href="bower_components/core-icons/hardware-icons.html"/>
+   <link rel="import" href="bower_components/core-icons/communication-icons.html"/>
+   <link rel="import" href="bower_components/core-icon/core-icon.html"/>
+   <link rel="import" href="bower_components/paper-ripple/paper-ripple.html"/>
+   <link rel="import" href="pschool_components/pschool-header.html"/>
+   <link rel="stylesheet" href="common.css"/>
+   <script>
+      __PSCHOOL_HOST__ = {
+         host: "http://pschool/"
+      }
+   </script>
 </head>
 
 <body unresolved>
-    <pschool-header>
-        <div id="logo">&#60;""/&#62;</div>
-        <div id="headerTitle" flex>Programer School</div>
-        <div id="profileButton"><core-icon icon="social:person-outline"></core-icon></div>
-    </pschool-header>
-    <!--<header>
-        <div id="headerWrap" horizontal layout center>
-            <div id="logo">&#60;""/&#62;</div>
-            <div id="headerTitle" flex>Programming School</div>
-            <div id="profileButton"><core-icon icon="account-circle"></core-icon></div>
-        </div>
-    </header>-->
-    <div id="content">
-        <div id="languageWrap">
-            <div class="titlePanel">
-                <core-icon icon="device:developer-mode"></core-icon> Language 교실
+<pschool-header>
+   <div id="logo">&#60;""/&#62;</div>
+   <div id="headerTitle" flex>Programer School</div>
+   <div id="profileButton">
+      <core-icon icon="social:person-outline"></core-icon>
+   </div>
+</pschool-header>
+<div id="content">
+   <div id="languageWrap">
+      <div class="titlePanel">
+         <core-icon icon="device:developer-mode"></core-icon>
+         Language 교실
+      </div>
+      <table cellpadding="0" cellspacing="0" id="languageMenuPanel">
+         <td>
+            <div id="languageC" class="roundButton" aria-label="c">
+               <paper-ripple fit></paper-ripple>
+               C
             </div>
-            <table cellpadding="0" cellspacing="0" id="languageMenuPanel">
-                <td>
-                    <div id="languageC" class="roundButton">
-                        C
-                    </div>
-                </td>
-                <td>
-                    <div id="languageJava" class="roundButton">
-                        Java
-                    </div>
-                </td>
-                <td>
-                    <div id="languageJS" class="roundButton">
-                        <p>Java<br/>Script</p>
-                    </div>
-                </td>
-                <td>
-                    <div id="languagePlus" class="roundButton last">
-                        <core-icon icon="social:school"></core-icon> +
-                    </div>
-                </td>
-            </table>
-        </div>
-        <div id="algorithmWrap">
-            <div class="titlePanel">
-                <core-icon icon="hardware:memory"></core-icon> Algorithm 교실
+         </td>
+         <td>
+            <div id="languageJava" class="roundButton">
+               <paper-ripple fit></paper-ripple>
+               Java
             </div>
-            <div id="algorithmMenuPanel">
-                <ul>
-                    <li>
-                        [user@psc ~ ]# <b>자료구조</b>
-                        <core-icon icon="hardware:keyboard-return"></core-icon>
-                    </li>
-                    <li class="last">
-                        [user@psc ~ ]# <b>정보처리기사</b>
-                        <core-icon icon="hardware:keyboard-return"></core-icon>
-                    </li>
-                </ul>
+         </td>
+         <td>
+            <div id="languageJS" class="roundButton">
+               <paper-ripple fit></paper-ripple>
+               <p>Java<br/>Script</p>
             </div>
-        </div>
-        <div id="backgroundImageWrap">
-            <div id="imagePanel">
-                <div class="keyboardImage">
-                    <core-icon icon="hardware:keyboard"></core-icon>
-                </div>
-                <div class="mouseImage">
-                    <core-icon icon="hardware:mouse"></core-icon>
-                </div>
+         </td>
+         <td>
+            <div id="languagePlus" class="roundButton last">
+               <paper-ripple fit></paper-ripple>
+               <core-icon icon="social:school"></core-icon>
+               +
             </div>
-        </div>
-    </div>
-    <footer>
-        <div id="footerWrap">
-            <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count"></div>
-            <div class="kakaotalkShareButton">
-                <img src="images/kakaotalk.png"/>
-            </div>
-        </div>
-    </footer>
+         </td>
+      </table>
+   </div>
+   <div id="algorithmWrap">
+      <div class="titlePanel">
+         <core-icon icon="hardware:memory"></core-icon>
+         Algorithm 교실
+      </div>
+      <div id="algorithmMenuPanel">
+         <ul>
+            <li>
+               [user@psc ~ ]# <b>자료구조</b>
+               <core-icon icon="hardware:keyboard-return"></core-icon>
+            </li>
+            <li class="last">
+               [user@psc ~ ]# <b>정보처리기사</b>
+               <core-icon icon="hardware:keyboard-return"></core-icon>
+            </li>
+         </ul>
+      </div>
+   </div>
+   <div id="backgroundImageWrap">
+      <div id="imagePanel">
+         <div class="desktopImage">
+            <core-icon icon="hardware:desktop-windows">
+               <core-icon icon="communication:forum"></core-icon>
+               <p>
+                  Quiz
+               </p>
+            </core-icon>
+         </div>
+         <div class="keyboardImage">
+            <core-icon icon="hardware:keyboard"></core-icon>
+         </div>
+         <div class="mouseImage">
+            <core-icon icon="hardware:mouse"></core-icon>
+         </div>
+      </div>
+   </div>
+</div>
+<footer>
+   <div id="footerWrap">
+      <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/"
+           data-layout="button_count"></div>
+      <div class="kakaotalkShareButton">
+         <img src="images/kakaotalk.png"/>
+      </div>
+   </div>
+</footer>
 </body>
 </html>
 <script>
-    (function (d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s);
-        js.id = id;
-        js.src = "//connect.facebook.net/ko_KR/sdk.js#xfbml=1&appId=802619206467765&version=v2.0";
-        fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
+   (function (d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s);
+      js.id = id;
+      js.src = "//connect.facebook.net/ko_KR/sdk.js#xfbml=1&appId=802619206467765&version=v2.0";
+      fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
 </script>

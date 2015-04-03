@@ -62,12 +62,14 @@ body {
       }
       & .roundButton {
         display: inline-block;
+        position: relative;
         vertical-align: middle;
         min-width: 50px; min-height: 50px;
         text-align: center;
         line-height: 50px;
         border-radius: 50%;
         box-shadow: 0px 1px 5px 1px #e2e2e2;
+        cursor: pointer
       }
       & .last {
         margin-right: 0px;
@@ -106,18 +108,41 @@ body {
       }
     }
   }
+
   & #backgroundImageWrap {
     padding: 20px 14px 0 14px;
+
     & #imagePanel {
       margin-top: 5px;
       text-align: center;
-      color: #e5e5e5;
+      color: #e0e0e0;
+
+      & .desktopImage {
+        display: block;
+        & > core-icon {
+          position: relative;
+          width: 150px; height: 150px;
+          color: #ccc;
+          & > core-icon {
+            width:45px; height: 45px;
+            margin: 0 auto;
+            margin-top: 32px;
+            color: #6889ff;
+          }
+          & > p {
+            color: gray;
+            font-size: 0.9em;
+          }
+        }
+      }
+
       & .keyboardImage {
         display: inline-block;
         & > core-icon {
           width: 100px; height:100px;
         }
       }
+
       & .mouseImage {
         display: inline-block;
         & > core-icon {
@@ -126,6 +151,7 @@ body {
       }
     }
   }
+
 }
 
 footer {

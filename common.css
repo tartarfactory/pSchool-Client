@@ -62,6 +62,7 @@ body {
 }
 #content #languageWrap #languageMenuPanel .roundButton {
   display: inline-block;
+  position: relative;
   vertical-align: middle;
   min-width: 50px;
   min-height: 50px;
@@ -69,6 +70,7 @@ body {
   line-height: 50px;
   border-radius: 50%;
   box-shadow: 0px 1px 5px 1px #e2e2e2;
+  cursor: pointer;
 }
 #content #languageWrap #languageMenuPanel .last {
   margin-right: 0px;
@@ -114,7 +116,27 @@ body {
 #content #backgroundImageWrap #imagePanel {
   margin-top: 5px;
   text-align: center;
-  color: #e5e5e5;
+  color: #e0e0e0;
+}
+#content #backgroundImageWrap #imagePanel .desktopImage {
+  display: block;
+}
+#content #backgroundImageWrap #imagePanel .desktopImage > core-icon {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  color: #ccc;
+}
+#content #backgroundImageWrap #imagePanel .desktopImage > core-icon > core-icon {
+  width: 45px;
+  height: 45px;
+  margin: 0 auto;
+  margin-top: 32px;
+  color: #6889ff;
+}
+#content #backgroundImageWrap #imagePanel .desktopImage > core-icon > p {
+  color: gray;
+  font-size: 0.9em;
 }
 #content #backgroundImageWrap #imagePanel .keyboardImage {
   display: inline-block;
